@@ -1,0 +1,40 @@
+﻿@model AuthoringAndCustomization.Services.EmbeddedReportViewModel;
+
+<div>
+  <div id="embed-content-box">
+    <div id="embed-container"></div>
+  </div>
+</div>
+
+
+<div id="create-bookmark-dialog" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create Custom Bookmark</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="bookmark-name" class="form-label">Bookmark Name</label>
+          <input type="text" class="form-control" id="bookmark-name" placeholder="enter bookmark name here" >
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="create-bookmark" type="button" class="btn btn-primary" disabled  data-bs-dismiss="modal" >Save</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts {
+  <script>
+    var viewModel = {
+      reportId: "@Model.ReportId",
+      embedUrl: "@Model.EmbedUrl",
+      token: "@Model.Token"
+    };
+  </script>
+  <script src="~/js/app07.js"></script>
+}

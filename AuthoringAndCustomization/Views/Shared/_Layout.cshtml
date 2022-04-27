@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authoring & Customization</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/lib/jqueryui/jquery-ui.css" />
+
+  <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+  <div id="top-div" class="container">
+    <div id="headerRow" class="row">
+      <header>
+        <div id="embed-container-nav">
+          <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-light">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index" >Dev Camp Demos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
+              <ul id="topnav-links" class="navbar-nav navbar-light flex-grow-1">
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo01">Demo 1</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo02">Demo 2</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo03">Demo 3</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo04">Demo 4</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo05">Demo 5</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo06">Demo 6</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo07">Demo 7</a>
+                </li>
+                <li class="nav-item top-nav-item">
+                  <a class="nav-link text-dark" asp-controller="Home" asp-action="Demo08">Demo 8</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div id="embed-toolbar-container" style="display:none;">
+          <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+              <ul id="embed-toolbar" class="navbar-nav navbar-light flex-grow-1">
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div id="bodyRow" class="row">
+      @RenderBody()
+    </div>
+  </div>
+
+  <script src="~/lib/jquery/jquery.js"></script>
+  <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  @RenderSection("Scripts", required: false)
+
+</body>
+</html>

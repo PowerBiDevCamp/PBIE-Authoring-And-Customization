@@ -1,0 +1,225 @@
+/* App-Owns-Data Lab Styles from Power BI Dev Camp */
+
+body {
+  background-color: #EEEEEE;
+}
+
+
+#content-box {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  background-color: white;
+  height: 600px;
+}
+
+.jumbotron-bootstrap5 {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 24px;
+  border: 1px solid #888888;
+  background-color: antiquewhite;
+}
+
+.jumbotron-bootstrap5 p {
+ font-size: 1.05em;
+}
+
+#demo-list {
+}
+
+  #demo-list li {
+  
+  }
+
+
+.navbar {
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+.navbar-brand {
+  border: 1px solid #FEFEFE;
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0px;
+  font-size: 1.5em;
+  font-family: 'Lucida Console';
+  line-height: 1.0em;
+}
+
+#embed-container-nav {
+  padding: 0px;
+  border-style: none;
+  border-bottom-style: none;
+}
+
+#embed-toolbar-container {
+}
+
+#embed-toolbar {
+  color: #666666;
+  background-color: black;
+  padding: 0px;
+}
+
+
+  #embed-toolbar .nav-item .btn {
+    padding: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 0.6em;
+    margin: 4px;
+    margin-left: 8px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+  }
+
+    #embed-toolbar .nav-item .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+#embed-toolbar .nav-item a.nav-link:hover {
+  background-color: lightsalmon;
+}
+
+#embed-toolbar .inline-header {
+  margin: 0px;
+  padding: 4px;
+  color: black;
+  background-color: goldenrod;
+  margin-left: 8px;
+  font-size: 0.7em;
+}
+
+  #embed-toolbar .inline-header:first-child {
+    margin-left: 0px;
+  }
+
+
+  #embed-toolbar .form-check-inline {
+    margin-right: 1px;
+    margin-left: 1px;
+    color:  antiquewhite;
+  }
+
+  #embed-toolbar .form-check:last-of-type {
+    margin-right: 12px;
+  }
+
+  #embed-toolbar .form-check-input {
+    margin-top: 8px;
+    font-size: 0.65em;
+    border-color: black;
+  }
+
+  #embed-toolbar .form-check-label {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+
+
+#user-welcome {
+  font-size: 0.65em;
+  color: #CCCCCC;
+  margin-top: 6px;
+  margin-right: 20px;
+}
+
+
+#embed-content-box {
+  flex: content;
+  background-color: white;
+  border-left: 1px solid #88888888;
+  border-right: 1px solid #88888888;
+  border-bottom: 1px solid #88888888;
+}
+
+#embed-container {
+  /*  min-height: 480px;
+  height: 600px;
+  */
+}
+
+
+#left-nav {
+  background-color: black;
+  color: white;
+  padding: 0;
+  border: 1px solid black;
+}
+
+  #left-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    #left-nav ul i {
+      padding-right: 4px;
+    }
+
+  #left-nav .navbar-header {
+    color: black;
+    background-color: #EDBE11;
+    padding: 2px;
+    padding-left: 4px;
+    border-bottom: 1px solid #333333;
+    font-size: 14px;
+  }
+
+  #left-nav .nav-item {
+    background-color: white;
+    padding: 2px;
+    padding-left: 4px;
+    border-bottom: 1px solid #333333;
+    font-size: 14px;
+  }
+
+    #left-nav .nav-item:hover {
+      background-color: lightsalmon;
+    }
+
+  #left-nav a.nav-link {
+    padding: 2px;
+    margin: 0px;
+  }
+
+  #left-nav .nav-item a {
+    color: black;
+  }
+
+
+
+
+  #left-nav .navbar-collapse, #left-nav .dropdown {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-size: 12px;
+    border-bottom: 1px solid #333333;
+  }
+
+  #left-nav .navbar-collapse {
+    padding: 8px;
+  }
+
+  #left-nav .dropdown {
+    padding: 0px;
+  }
+
+    #left-nav .dropdown button {
+      margin: 0px;
+      padding: 4px;
+      width: 100%;
+      text-align: left;
+    }
+

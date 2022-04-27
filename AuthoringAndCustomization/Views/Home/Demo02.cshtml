@@ -1,0 +1,19 @@
+﻿@model AuthoringAndCustomization.Services.EmbeddedReportViewModel;
+
+<div>
+  <div id="embed-content-box">
+    <div id="embed-container"></div>
+  </div>
+</div>
+
+@section Scripts {
+  <script>
+    var viewModel = {
+      reportId: "@Model.ReportId",
+      embedUrl: "@Model.EmbedUrl",
+      token: "@Model.Token",
+      targetWorkspaceId: "@Model.TargetWorkspaceId"
+    };
+  </script>
+  <script src="~/js/app02.js"></script>
+}
